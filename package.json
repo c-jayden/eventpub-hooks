@@ -1,0 +1,29 @@
+{
+  "name": "eventpub-hooks",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": ["pubsub", "events", "hooks", "javascript", "vue", "react"],
+  "author": "c-jayden",
+  "license": "MIT",
+  "description": "A simple publish/subscribe hooks library for JavaScript",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/c-jayden/eventpub-hooks.git"
+  },
+  "bugs": {
+    "url": "https://github.com/c-jayden/eventpub-hooks/issues"
+  },
+  "homepage": "https://github.com/c-jayden/eventpub-hooks#readme",
+  "devDependencies": {
+    "@types/node": "^22.5.5",
+    "typescript": "^5.6.2"
+  }
+}
