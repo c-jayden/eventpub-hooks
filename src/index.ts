@@ -95,7 +95,9 @@ const handleError = (error: any, key?: EventKey) => {
   }
 };
 
-export const usePubSub = (initialConfig: Partial<PubSubConfig>): PubSub => {
+export const usePubSub = (
+  initialConfig = {} as Partial<PubSubConfig>
+): PubSub => {
   const config = { ...defaultConfig, ...initialConfig };
 
   /**
